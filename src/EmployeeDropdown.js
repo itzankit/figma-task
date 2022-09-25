@@ -7,18 +7,14 @@ import SearchTreatment from "./SearchTreatment";
 function EmployeeDropDown() {
   const [isShow, setIsShow] = useState(false);
   function handleShowDropdown() {
-    setIsShow(true);
-  }
-  function handleHideDropdown() {
-    setIsShow(false);
+    setIsShow(!isShow);
   }
   return (
-    <div
-      className="dropdown"
-      onMouseEnter={handleShowDropdown}
-      onMouseLeave={handleHideDropdown}
-    >
-      <div className={isShow ? `selectOpen` : `select`}>
+    <div className="dropdown">
+      <div
+        className={isShow ? `selectOpen` : `select`}
+        onClick={handleShowDropdown}
+      >
         <div>
           <span className="ellipse3">
             <img src={logo3}></img>

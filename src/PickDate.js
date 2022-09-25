@@ -11,10 +11,7 @@ function PickDate() {
   const [showCalendar, setShowCalendar] = useState(false);
   const [date, setDate] = useState([]);
   function handleShowCalendar() {
-    setShowCalendar(true);
-  }
-  function handleHideCalendar() {
-    setShowCalendar(false);
+    setShowCalendar(!showCalendar);
   }
   function handleDateSelect(selected) {
     let newDate = defaultMultipleDateInterpolation(selected, date);
@@ -23,8 +20,7 @@ function PickDate() {
   return (
     <div
       style={{ marginTop: "35px", marginBottom: "65px" }}
-      onMouseEnter={handleShowCalendar}
-      onMouseLeave={handleHideCalendar}
+      onClick={handleShowCalendar}
     >
       <div className="pickDateDropDown">
         <div className="selectDate">

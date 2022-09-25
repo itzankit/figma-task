@@ -7,18 +7,15 @@ import AllPractitionerMenu from "./AllPractitionerMenu";
 function AllPractitioner() {
   const [isShow, setIsShow] = useState(false);
   function handlePractitionerShow() {
-    setIsShow(true);
+    setIsShow(!isShow);
   }
-  function handlePractitionerHide() {
-    setIsShow(false);
-  }
+
   return (
-    <div
-      className="dropdown"
-      onMouseEnter={handlePractitionerShow}
-      onMouseLeave={handlePractitionerHide}
-    >
-      <div className={isShow ? `selectOpen` : `select`}>
+    <div className="dropdown">
+      <div
+        className={isShow ? `selectOpen` : `select`}
+        onClick={handlePractitionerShow}
+      >
         <div>
           <span className="ellipse3">
             <img src={logo3}></img>
