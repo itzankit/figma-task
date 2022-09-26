@@ -7,6 +7,9 @@ function SearchTreatment() {
   function handleChange(e) {
     setSearchTerm(e.target.value);
   }
+  function handleClear() {
+    setSearchTerm("");
+  }
   return (
     <div style={{ width: "270px" }}>
       <div className="searchTreatment">
@@ -30,6 +33,13 @@ function SearchTreatment() {
               onChange={handleChange}
             ></input>
           </span>
+          {searchTerm && (
+            <span>
+              <button onClick={handleClear} className="clearButton">
+                Clear
+              </button>
+            </span>
+          )}
         </div>
       </div>
       <FilterTreament term={searchTerm} />

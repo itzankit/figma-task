@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import data from "./data/practitionerData";
+import React, { useEffect, useState } from "react";
+import data from "./data/practitionerInfo.json";
 import SelectPractioner from "./SelectPractitioner";
 
 function SelectAllPractitioner() {
   const [allChecked, setAllChecked] = useState(false);
-  function handlechange() {
+  function handleAllChange() {
     setAllChecked(!allChecked);
   }
+
   return (
     <div>
       <div style={{ marginLeft: "25px", marginTop: "15px", height: "40px" }}>
@@ -17,8 +18,8 @@ function SelectAllPractitioner() {
               className="checkbox"
               style={{ marginLeft: "320px" }}
               type="checkbox"
+              onChange={handleAllChange}
               checked={allChecked}
-              onChange={handlechange}
             ></input>
           </span>
         </div>

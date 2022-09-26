@@ -11,7 +11,6 @@ a:link {
 }
 a:active {
   color: #314363;
-
   text-decoration: none;
 }
 
@@ -45,7 +44,6 @@ a:active {
   width: 1112px;
   height: 18px;
   color: #7e98ba;
-
   background-image: url("./assest/images/DownArrow.png");
   background-size: 10px;
   background-repeat: no-repeat;
@@ -62,9 +60,10 @@ a:active {
   width: 28px;
   background-color: #314363;
   border-radius: 50%;
+  left: 95px;
   display: inline-block;
   position: absolute;
-  left: 95px;
+  color: #ffffff;
 }
 .ellipse2 {
   height: 25px;
@@ -125,8 +124,6 @@ a:active {
   display: flex;
   -webkit-appearance: none;
   border-bottom: 1px solid #e8ecf2;
-  /* margin-top: 35px;
-  margin-bottom: 65px; */
 }
 
 .selectDate {
@@ -259,11 +256,8 @@ a:active {
   position: absolute;
   width: 270px;
   height: 236.18px;
-
   background: #142a51;
-
   backdrop-filter: blur(72px);
-
   border-radius: 12px;
 }
 .searchInput {
@@ -294,33 +288,43 @@ input.searchInput {
   position: absolute;
   width: 104px;
   height: 18px;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 140%;
-  /* or 18px */
-
   font-feature-settings: "tnum" on, "lnum" on;
-
   color: #dae2ef;
 }
 .notFoundText {
   position: absolute;
   width: 67px;
   height: 18px;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 140%;
-  /* or 18px */
-
   font-feature-settings: "tnum" on, "lnum" on;
-
   color: #dae2ef;
+  margin-left: 10px;
+}
+
+.clearButton {
+  position: absolute;
+  width: 32px;
+  height: 18px;
+  border: none;
+  background-color: #1c3663;
+  color: #eff5fc;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 180px;
+  margin-top: 15px;
 }
 /* Calender css */
 .Cal__Day__root {

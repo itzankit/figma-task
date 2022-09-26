@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo2 from "./assest/images/Ellipse 26.png";
 import logo3 from "./assest/images/Ellipse 27.png";
-import logo1 from "./assest/images/3.png";
 import AllPractitionerMenu from "./AllPractitionerMenu";
+import data from "./data/practitionerInfo.json";
 
 function AllPractitioner() {
   const [isShow, setIsShow] = useState(false);
@@ -24,10 +24,7 @@ function AllPractitioner() {
             <img src={logo2}></img>
           </span>
           <span className="ellipse1">
-            <img
-              style={{ marginTop: "8px", marginLeft: "5px" }}
-              src={logo1}
-            ></img>
+            <div style={{ marginLeft: "5px" }}>{data.length}</div>
           </span>
         </div>
         <div className="employee">

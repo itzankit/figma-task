@@ -15,7 +15,9 @@ function PickDate() {
   }
   function handleDateSelect(selected) {
     let newDate = defaultMultipleDateInterpolation(selected, date);
-    setDate(newDate);
+    let lastSelectedDate = newDate.slice(-1);
+    console.log("NEW DATE::::::", lastSelectedDate);
+    setDate(lastSelectedDate);
   }
   return (
     <div

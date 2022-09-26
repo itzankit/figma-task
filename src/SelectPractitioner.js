@@ -9,7 +9,7 @@ function SelectPractioner(props) {
     <div style={{ height: "45px", width: "375px", marginTop: "" }}>
       <div>
         <span style={{ marginLeft: "20px" }}>
-          <img src={props.image} width="29px" height="29px"></img>
+          <img src={require(`${props.image}`)} width="29px" height="29px"></img>
         </span>
         <span className="doctorName">{props.name}</span>
         <span>

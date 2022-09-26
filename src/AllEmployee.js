@@ -1,7 +1,7 @@
 import React from "react";
 import logo2 from "./assest/images/Ellipse 26.png";
 import logo3 from "./assest/images/Ellipse 27.png";
-import logo1 from "./assest/images/12.png";
+import data from "./data/treatmentData.json";
 
 function AllEmployee() {
   return (
@@ -17,10 +17,7 @@ function AllEmployee() {
           <img src={logo2}></img>
         </span>
         <span className="ellipse4">
-          <img
-            style={{ marginTop: "8px", marginLeft: "5px" }}
-            src={logo1}
-          ></img>
+          <div style={{ marginLeft: "5px", color: "white" }}>{data.length}</div>
         </span>
       </div>
       <div className="allEmployeeText">All Employee</div>
